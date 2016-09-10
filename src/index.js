@@ -6,12 +6,13 @@
  */
 
 import React from 'react'
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import ReactDOM from 'react/lib/ReactDOM'
 
 import ControlPanel from './views/control-panel'
 import DashBoard from './views/dash-board'
 import MyHeroes from './views/my-heroes'
+import HeroDetail from './views/hero-detail'
 
 class App extends React.Component {
   render () {
@@ -27,8 +28,9 @@ class App extends React.Component {
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      <Route path="/" component={DashBoard} />
+      <IndexRoute component={DashBoard} />
       <Route path="/my-heroes" component={MyHeroes} />
+      <Route path="/hero/:id" component={HeroDetail} />
     </Route>
   </Router>,
   document.querySelector('app')

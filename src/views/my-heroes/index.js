@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router'
+
 import { getHeroesList } from '../../services'
 
 
@@ -11,10 +13,12 @@ export default class MyHeroes extends React.Component {
           {
             getHeroesList().map((item, index) => {
               return (
-                <li key={index}>
-                  <span>{item.level}</span>
-                  <span>{item.name}</span>
-                </li>
+                <Link to={ '/hero/' + item.id } key={item.id}>
+                  <li>
+                    <span>Lv.{item.level}</span>:
+                    <span>{item.name}</span>
+                  </li>
+                </Link>
               )
             })
           }

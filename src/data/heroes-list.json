@@ -1,6 +1,6 @@
 [
-  { "name": "Wch", "level": 26, "sex": "male", "type": "warrior" },
-  { "name": "Father", "level": 55, "sex": "male", "type": "magician" },
-  { "name": "Mother", "level": 54, "sex": "female", "type": "pastor" },
-  { "name": "Grandma", "level": 74, "sex": "female", "type": "chief" }
+  { "id": 1, "name": "Wch", "level": 26, "sex": "male", "type": "warrior" },
+  { "id": 2, "name": "Father", "level": 55, "sex": "male", "type": "magician" },
+  { "id": 3, "name": "Mother", "level": 54, "sex": "female", "type": "pastor" },
+  { "id": 4, "name": "Grandma", "level": 74, "sex": "female", "type": "chief" }
 ]
